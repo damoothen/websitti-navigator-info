@@ -99,10 +99,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Section 1</h2>
-                    <a href="#" id="success" class="button">Success</a>
-                    <a href="#" id="error" class="button">Error</a>
-                    <a href="#" id="alert" class="button">Alert</a>
-                    <a href="#" id="info" class="button">Info</a>
+                    <div id="data"></div>
                 </div>
             </div>
         </div>
@@ -152,10 +149,13 @@
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- UA Parser -->
+    <script src="../bower_components/ua-parser-js/dist/ua-parser.min.js"></script>
 
     <script src="../src/js/navigator-info.js"></script>
 
     <script>
+        document.querySelector('#data').innerHTML = '<pre>' + JSON.stringify(navigator.info) + '</pre>';
     </script>
 
 </body>
