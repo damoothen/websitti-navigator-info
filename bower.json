@@ -1,0 +1,21 @@
+{
+  "name": "websitti-navigator-info",
+  "authors": [
+    "David Moothen <dmoothen@websitti.fr>"
+  ],
+  "description": "Get data about browser",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
